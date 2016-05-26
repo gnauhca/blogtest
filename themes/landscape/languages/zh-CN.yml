@@ -6,6 +6,7 @@ tweets: 推文
 prev: 上一页
 next: 下一页
 comment: 留言
+archive: 归档
 archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
@@ -17,3 +18,4 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+home: 首页

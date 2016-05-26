@@ -1,0 +1,101 @@
+$view-height: 300px;
+.view {
+    position: relative;
+    //width: 80%;
+    height: $view-height;
+    perspective: 1000px;
+    overflow: hidden;
+    background: #123d5d;
+    
+    .earth-wrap {
+		position: absolute;
+		left: 50%;
+		bottom: $view-height * -5;
+		width: 0;
+		heiht: 0;    	
+        //transform: translateZ( -$view-height * 0.3);
+    }
+    .earth {
+		// deletewidth: 100px;
+        height: 100px;
+        background: #fff;
+
+        /*  */
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        animation: earth-rotate 60s linear infinite;
+        .mountain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 0;
+            height: 0;
+            border-color: #abc;
+            border-style: solid;
+            border-top: none;
+            border-bottom: 2rem solid #abc;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            transform-origin: center top;
+
+            i {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                box-sizing: border-box;
+                width: 0;
+                height: 0;
+            }
+        }
+        .star {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 0;
+            height: 0; 
+            animation-name: star-blink;
+            //animation-timing-function: step-start; 
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+    }
+
+    .name {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -114px;
+        margin-top: 70px;
+    }
+}
+
+@keyframes earth-rotate {
+	form {
+		transform: rotateX(0);
+	}
+	to {
+		transform: rotateX(-360deg);
+	}
+}
+
+@keyframes star-blink {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

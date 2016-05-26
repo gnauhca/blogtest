@@ -1,21 +1,60 @@
+
+<!--
+<% if (site) { %>
+
+<% for (var k in site) { %>
+  <% //if (typeof site[k] == 'string') {%>
+  <spen style="color: red"><%= k %> </spen> --- <%= site[k] %> <br>
+  <% //} %>
+<% } %>
+
+<% } %>
+
+
+<br>
+<br>
+<br>
+<hr>
+<hr>
+<hr>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<% if (page) { %>
+
+<% for (var k in page) { %>
+  <% if (typeof page[k] == 'string') {%>
+  <spen style="color: red"><%= k %> </spen> --- <%= page[k] %> <br>
+  <% } %>
+<% } %>
+
+<% } %>
+
+-->
+
+
+
+
 <header id="header">
-  <div id="banner"></div>
+
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
-      </h1>
       <% if (theme.subtitle){ %>
         <h2 id="subtitle-wrap">
           <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
         </h2>
       <% } %>
     </div>
+
     <div id="header-inner" class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a>
         <% } %>
       </nav>
       <nav id="sub-nav">
@@ -30,3 +69,31 @@
     </div>
   </div>
 </header>
+
+
+
+<div class="banner-wrap">
+  <div id="banner">
+    <div class="view">
+      <div class="earth-wrap">
+        <div class="earth" style="transform: rotateX(1deg)"></div>
+      </div>
+
+      <h1 id="logo-wrap">
+        <a href="<%- url_for() %>" id="logo">
+          <div class="name">
+            <span style="color: #ff4d4d;">J</span>
+            <span style="color: #ffec4d;">a</span>
+            <span style="color: #83ff4d;">s</span>
+            <span style="color: #4db6ff;">o</span>
+            <span style="color: #ffad4d;">n</span>
+          </div>  
+        </a>
+      </h1>  
+    </div>
+  </div>
+</div>
+
+<%- js('js/banner') %>
+<% if (!page.title) {%>
+<% } %>

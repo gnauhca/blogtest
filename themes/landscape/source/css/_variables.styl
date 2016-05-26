@@ -2,16 +2,19 @@
 support-for-ie = false
 vendor-prefixes = webkit moz ms official
 
+// background 
+page-background-url = "images/page_bg.png"
+
+
 // Colors
 color-default = #555
-color-grey = #999
+color-grey = #666
 color-border = #ddd
-color-link = #258fb8
-color-background = #eee
-color-sidebar-text = #777
-color-widget-background = #ddd
-color-widget-border = #ccc
-color-footer-background = #262a30
+color-link = #61d4ff
+color-background = #f2f2f2
+color-sidebar-text = #0b8fa2
+color-widget-background = rgba(255,255,255,0.5)
+color-widget-border = #aaa
 color-mobile-nav-background = #191919
 color-twitter = #00aced
 color-facebook = #3b5998
@@ -30,15 +33,23 @@ line-height = 1.6em
 line-height-title = 1.1em
 
 // Header
+header-height = 40px;
 logo-size = 40px
 subtitle-size = 16px
-banner-height = 300px
+banner-height = 400px
 banner-url = "images/banner.jpg"
 
 sidebar = hexo-config("sidebar")
 
+
+// footer 
+color-footer-background = #fff
+
+
+
 // Layout
 block-margin = 50px
+block-shadow = 2px 2px 4px rgba(0,0,0,0.08)
 article-padding = 20px
 mobile-nav-width = 280px
 main-column = 9
@@ -48,6 +59,11 @@ if sidebar and sidebar isnt bottom
   _sidebar-column = sidebar-column
 else
   _sidebar-column = 0
+
+
+// article 
+color-article-title = #0b8fa2
+
 
 // Grids
 column-width = 80px

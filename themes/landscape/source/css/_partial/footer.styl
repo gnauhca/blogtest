@@ -1,7 +1,7 @@
 #footer
-  background: color-footer-background
-  padding: 50px 0
-  border-top: 1px solid color-border
+  background: color-background
+  padding: 30px 0
+  border-top: 1px solid #eee
   color: color-grey
   a
     color: color-link
@@ -9,6 +9,32 @@
     &:hover
       text-decoration: underline
 
+.short-page
+  #footer
+    width: 100%;
+    position: fixed
+    bottom: 0;
+
+
 #footer-info
   line-height: line-height
   font-size: 0.85em
+  text-align: center
+  .m-info
+    position: relative
+    top: -10px;
+
+  .personal-link
+    a
+      margin-left: 10px;
+      color: #000;
+      
+    a.icon
+      &:hover
+        color: #4078c0;
+        
+      .octicon-mark-github 
+        fill: currentColor
+      .octicon-mark-codepen
+        stroke: currentColor
+        

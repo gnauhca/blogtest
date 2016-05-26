@@ -4,20 +4,27 @@
 
 .widget-wrap
   margin: block-margin 0
+  padding: 10px 0
+  background: color-widget-background
+  box-shadow: block-shadow
 
 .widget-title
   @extend $block-caption
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+  margin-left: 10px;
 
 .widget
   color: color-sidebar-text
-  text-shadow: 0 1px #fff
-  background: color-widget-background
-  box-shadow: 0 -1px 4px color-widget-border inset
-  border: 1px solid color-widget-border
-  padding: 15px
-  border-radius: 3px
+  //text-shadow: 0 1px #fff
+  //box-shadow: 0 -1px 4px color-widget-border inset
+  //border: 1px solid color-widget-border
+  padding: 10px 15px
+  //border-radius: 3px
+  font-size: 0.8em
   a
-    color: color-link
+    color: color-sidebar-text
     text-decoration: none
     &:hover
       text-decoration: underline

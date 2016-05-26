@@ -1,12 +1,18 @@
 @media mq-mobile
   #mobile-nav
     position: absolute
+    z-index: -10
     top: 0
-    left: 0
+    left: -1 * mobile-nav-width
     width: mobile-nav-width
     height: 100%
     background: color-mobile-nav-background
     border-right: 1px solid #fff
+    transition: transform 0.2s ease-out
+    
+
+    .mobile-nav-on &
+        transform: translateX(mobile-nav-width)
 
 @media mq-mobile
   .mobile-nav-link

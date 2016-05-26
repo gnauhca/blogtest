@@ -4,8 +4,11 @@
 .article-inner
   @extend $block
   overflow: hidden
+  box-shadow: block-shadow
 
 .article-meta
+  padding: 10px 10px 0 10px
+  line-height: 1.2
   clearfix()
 
 .article-date
@@ -16,7 +19,7 @@
   float: left
   line-height: 1em
   color: #ccc
-  text-shadow: 0 1px #fff
+  // text-shadow: 0 1px #fff
   margin-left: 8px
   &:before
     content: "\2022"
@@ -30,9 +33,9 @@
 
 .article-title
   text-decoration: none
-  font-size: 2em
-  font-weight: bold
-  color: color-default
+  font-size: 3em
+  font-weight: normal
+  color: color-article-title
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
@@ -182,12 +185,12 @@
       absolute-center(8px)
       content: ""
       border-radius: 50%
-      background: color-border
-      box-shadow: 0 1px 2px #fff
+      background: #666
+      //box-shadow: 0 1px 2px #fff
 
 .article-nav-link-wrap
   text-decoration: none
-  text-shadow: 0 1px #fff
+  //text-shadow: 0 1px #fff
   color: color-grey
   box-sizing: border-box
   margin-top: block-margin
@@ -214,9 +217,9 @@
 .article-nav-caption
   text-transform: uppercase
   letter-spacing: 2px
-  color: color-border
+  // color: color-border
   line-height: 1em
-  font-weight: bold
+  // font-weight: bold
   #article-nav-newer &
     margin-right: -2px
 
