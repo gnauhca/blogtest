@@ -1,44 +1,4 @@
 
-<!--
-<% if (site) { %>
-
-<% for (var k in site) { %>
-  <% //if (typeof site[k] == 'string') {%>
-  <spen style="color: red"><%= k %> </spen> --- <%= site[k] %> <br>
-  <% //} %>
-<% } %>
-
-<% } %>
-
-
-<br>
-<br>
-<br>
-<hr>
-<hr>
-<hr>
-<hr>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<% if (page) { %>
-
-<% for (var k in page) { %>
-  <% if (typeof page[k] == 'string') {%>
-  <spen style="color: red"><%= k %> </spen> --- <%= page[k] %> <br>
-  <% } %>
-<% } %>
-
-<% } %>
-
--->
-
-
-
-
 <header id="header">
 
   <div id="header-outer" class="outer">
@@ -70,8 +30,7 @@
   </div>
 </header>
 
-
-
+<% if (banner) { %>
 <div class="banner-wrap">
   <div id="banner">
     <div class="view">
@@ -96,4 +55,6 @@
 
 <%- js('js/banner') %>
 <% if (!page.title) {%>
+<% } %>
+
 <% } %>

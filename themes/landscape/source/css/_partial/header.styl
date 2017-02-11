@@ -187,7 +187,19 @@ $nav-link
 
 
 .banner-wrap
+  position: relative;
   height:  banner-height - 40px
+  
+  &:after
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    height: 50px
+  &:after
+    bottom: 0
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))
+
   #banner
     position: relative
     top: -40px

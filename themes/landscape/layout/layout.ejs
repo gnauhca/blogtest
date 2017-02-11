@@ -2,7 +2,8 @@
 <body>
   <div id="container">
     <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <% var banner = /^index\.html$/.test(path)  %>
+      <%- partial('_partial/header', { banner: banner }, {cache: !config.relative_link}) %>
       <div class="outer" id="outer">
         <section id="main"><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
