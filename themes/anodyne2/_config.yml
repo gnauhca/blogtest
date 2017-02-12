@@ -1,0 +1,48 @@
+# Logo
+# logo_image_source: http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/assets/anodyne.svg
+logo_image_source: sdf
+
+# Index Page
+index_banner_text: Hi, 我是阿创
+index_banner_text_secondary: 这里是我的博客
+index_font_awesome_icon_css: fa fa-paper-plane
+
+# Header
+menu:
+  首页: /
+  归档: /archives
+  关于: /about.html
+  联系: /contact.html
+
+# Post
+default_post_title: Untitled
+default_post_icon: fa-file-text-o
+
+# Archive Date Format
+archive_date_format: MMM YYYY
+archive_font_awesome_icon_css: fa-folder-open
+
+# About Widget
+about_widget_avatar_url: http://img1.ph.126.net/phpqJA48jLnBoIYinHhjsw==/6632081515421680825.png
+about_widget_text: "My name is Zhouzhichuang. You can call me Jason. I was born in 1991s."
+
+
+# Comments.
+comments:
+  # Disqus comments
+  disqus_shortname: 
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Social Media Platforms
+social_platforms:
+  - url: https://github.com/zhzhchwin
+    fa_icon: fa-github
+  - url: https://codepen.io/JasonTurbo/
+    fa_icon: fa-codepen
+  - url: mailto:576073927@qq.com
+    fa_icon: fa-envelope
+
+# Footer about
+# footer_about: "@Untitled. All right reserved | Design & Hexo <a class=\"link dim white\" href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"
