@@ -1,6 +1,6 @@
 # Logo
 # logo_image_source: http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/assets/anodyne.svg
-logo_image_source: sdf
+logo_image_source: /images/avatar.jpg
 
 # Index Page
 index_banner_text: Hi, 我是阿创
@@ -19,11 +19,11 @@ default_post_title: Untitled
 default_post_icon: fa-file-text-o
 
 # Archive Date Format
-archive_date_format: MMM YYYY
+archive_date_format:  YYYY-MM
 archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
-about_widget_avatar_url: http://img1.ph.126.net/phpqJA48jLnBoIYinHhjsw==/6632081515421680825.png
+about_widget_avatar_url: /images/avatar.jpg
 about_widget_text: "My name is Zhouzhichuang. You can call me Jason. I was born in 1991s."
 
 
