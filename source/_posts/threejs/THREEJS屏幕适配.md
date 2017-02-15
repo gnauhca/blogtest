@@ -112,6 +112,7 @@ camera.updateProjectionMatrix();
 这样，任意宽高比例的屏幕应该对应多大的垂直视角就确定了。
 
 ## 最终代码与效果
+
 ```javascript
 var controls = new function () {
 
