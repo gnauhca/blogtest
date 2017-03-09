@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jason's blog
+title: Chaz's blog
 subtitle: 
 description:
-author: JasonTurbo
+author: zzc
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
-root: /
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -69,5 +69,5 @@ theme: anodyne
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: git@github.com:zhzhchwin/zhzhchwin.github.io.git
+  repo: git@github.com:gnauhca/blog.git
   branch: master

@@ -3,7 +3,7 @@
 logo_image_source: /images/avatar.jpg
 
 # Index Page
-index_banner_text: Hi, I m ZZC
+index_banner_text: Hi, I m Chaz
 index_banner_text_secondary: 这里是我的博客
 index_font_awesome_icon_css: fa fa-paper-plane
 
@@ -37,9 +37,9 @@ google_analytics:
 
 # Social Media Platforms
 social_platforms:
-  - url: https://github.com/zhzhchwin
+  - url: https://github.com/gnauhca
     fa_icon: fa-github
-  - url: https://codepen.io/JasonTurbo/
+  - url: https://codepen.io/gnauhca/
     fa_icon: fa-codepen
   - url: mailto:576073927@qq.com
     fa_icon: fa-envelope
