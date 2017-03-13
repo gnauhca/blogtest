@@ -1,6 +1,6 @@
 # Logo
 # logo_image_source: http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/assets/anodyne.svg
-logo_image_source: /images/avatar.jpg
+logo_image_source: /blog/images/avatar.jpg
 
 # Index Page
 index_banner_text: Hi, I m Chaz
@@ -23,8 +23,8 @@ archive_date_format:  YYYY-MM
 archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
-about_widget_avatar_url: /images/avatar.jpg
-about_widget_text: "My name is Zhouzhichuang. You can call me Jason. I was born in 1991s."
+about_widget_avatar_url: /blog/images/avatar.jpg
+about_widget_text: "My name is Zhouzhichuang. You can call me Chaz. I was born in 1991s."
 
 
 # Comments.

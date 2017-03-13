@@ -1,3 +1,9 @@
+---
+title: perl 版本的 rename
+date: 2016-03-11
+tags: linux
+category: Linux
+---
 
 perl 版本的 rename 命令需要了解 perl 正则 http://www.chinaunix.net/old_jh/25/159388.html
 
