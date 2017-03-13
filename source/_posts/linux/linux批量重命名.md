@@ -30,9 +30,9 @@ mv 命令一次只能操作一个文件，这样效率就太低了。其实可�
 
 ## 使用 rename 
 
-我想推荐的是 rename 命令，rename 命令是专门中来重命名操作的，linux 下的 rename 命令有两种版本，一种是 C 语言版本， 一种是 perl 版。可以使用 man rename 看一下自己的是什么版本的。我电脑上的 perl 版本的，所以我就只介绍这个版本的用法啦。
+我想推荐的是 rename 命令，rename 命令是专门中来重命名操作的。linux 下的 rename 命令有两种版本，一种是 C 语言版本， 一种是 perl 版。可以使用 man rename 看一下自己的是什么版本的。我电脑上的 perl 版本的，所以我就只介绍这个版本的用法啦。
 
-基本用法是:
+基本用法:
 ```
 rename 's/(查询的正则)/(替换的内容)/' 文件
 
@@ -54,9 +54,11 @@ filename.replace(/(.*?)\_(.*?)\_(.*?)/, '$2_$1_$3');
 
 {% asset_img renameperl.png %}
 
-cool! 效果是和 js replace 函数是一样的，这样的话，知道这个用法， 就已经可以应付大多数的重命名需求了。
+Cool!! 效果是和 js replace 函数是一样的。这样的话，知道这个用法，就已经可以应付大多数的重命名需求了。
 
-如果不行，请别找我。
+如果不行，请别找我... 
 
-参考文章：
+<br>
+## 参考文章：
+
 [[精华] Perl 中的正则表达式](http://bbs.chinaunix.net/forum.php?mod=viewthread&tid=159388)
