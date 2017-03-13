@@ -1,13 +1,13 @@
 ---
-title: IMPRESSIVE ART IN CSS 分享读后感
+title: IMPRESSIVE ART IN CSS 读后感
 date: 2016-11-24 14:27:07
 tags: design css
 category: design
 ---
-# IMPRESSIVE ART IN CSS 分享读后感
 
 {% asset_img cssart.png %}
 
+http://www.w3cplus.com/css/notes-css-dev-conf-2016.html
 
 其实这个分享我一早就看了，只是这个分享不是技术文章，已经上升到 "艺术" 层面了，我感觉水平有限，压力山大，实在总结不出什么玩意儿，不知道能写点什么。纠结了很久，下面我把这个当做读后感发一下吧！大家磕磕瓜子，随便看看就好。
 
