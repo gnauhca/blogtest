@@ -1,0 +1,132 @@
+$highlight-background = #272822
+$highlight-current-line = #3E3D32
+$highlight-selection = #49483E
+$highlight-foreground = #F8F8F2
+$highlight-comment = #75715E
+$highlight-red = #F92672
+$highlight-orange = #FD971F
+$highlight-yellow = #E6DB74
+$highlight-green = #A6E22E
+$highlight-aqua = #A1EFE4
+$highlight-blue = #66D9EF
+$highlight-purple = #AE81FF
+
+// Code Blocks
+.content
+  figure
+    &.highlight
+      margin-left 0
+      margin-right 0
+      figcaption
+        padding-top 10px
+        font-size 85%
+        opacity 0.75
+        &:before
+          content "\f016"
+          font-family FontAwesome
+          margin 0 10px 0 20px
+        a
+          margin-left 10px
+        & +
+          table
+      .gutter
+        display none
+      .code
+        padding-left 15px
+
+.content code, .content pre, .content figure.highlight
+  color: $highlight-foreground;
+  background-color $highlight-background
+  font-family Consolas, "Liberation Mono", Menlo, Courier, monospace
+  font-size 85%
+  line-height 1.45
+  overflow-x: scroll
+
+.content pre
+  padding: 10px
+
+// Syntax Highlighting
+pre
+  .comment
+  .template_comment
+  .diff .header
+  .doctype
+  .pi
+  .lisp .string
+  .javadoc
+  .meta
+    color: $highlight-comment
+  .variable
+  .attribute
+  .tag
+  .regexp
+  .ruby .constant
+  .xml .tag .title
+  .xml .pi
+  .xml .doctype
+  .html .doctype
+  .css .id
+  .css .class
+  .css .pseudo
+  .lisp .body
+  .smalltalk .number
+  .constant
+  .class .title
+  .parent
+  .haskell .type
+    color: $highlight-red
+  .number
+  .preprocessor
+  .built_in
+  .literal
+  .params
+  .constant
+  .preprocessor .keyword
+  .shebang
+  .symbol
+  .symbol .string
+  .diff .change
+  .special
+  .attr_selector
+  .important
+  .subst
+  .cdata
+  .clojure .title
+  .command
+  .tag .value
+  .phpdoc
+  .tex .formula
+  .regexp
+    color: $highlight-orange
+  .class
+  .ruby .class .title
+  .css .rules .attribute
+    color: $highlight-green
+  .string
+  .value
+  .inheritance
+  .header
+  .ruby .symbol
+  .xml .cdata
+    color: $highlight-green
+  .hexcolor
+    color: $highlight-aqua
+  .function
+  .python .decorator
+  .python .title
+  .ruby .function .title
+  .ruby .title .keyword
+  .perl .sub
+  .javascript .title
+  .coffeescript .title
+    color: $highlight-blue
+  .keyword
+  .javascript .function
+  .winutils
+  .method
+  .addition
+  .css .tag
+  .request
+  .status
+  .nginx .title
+    color: $highlight-purple

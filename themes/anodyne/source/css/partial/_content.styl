@@ -47,13 +47,16 @@
   h6
     font-size: 0.85em
     color: #777
+  p
+    overflow: hidden;
+    word-break: break-all;
 
 // Elements
 .content
   hr
     border: 0
     height: 1px
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
   blockquote
     background #f9f9f9
@@ -135,18 +138,18 @@
 // tags
 .tags-container-vertical
   display none
-  @media screen and (min-width: 1400px)
-    display block
-    position relative
-    height 0
-    margin-left -10vw 
-    .tags-sub-container
-      position absolute
-      text-align right
-      transform-origin left
-      transform rotate(-90deg) translateX(-100%)
+  // @media screen and (min-width: 1400px)
+  //   display block
+  //   position relative
+  //   height 0
+  //   margin-left -10vw 
+  //   .tags-sub-container
+  //     position absolute
+  //     text-align right
+  //     transform-origin left
+  //     transform rotate(-90deg) translateX(-100%)
 
 .tags-container-bottom
   display block
-  @media screen and (min-width: 1400px)
-    display none
+  // @media screen and (min-width: 1400px)
+  //   display none

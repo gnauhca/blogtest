@@ -13,14 +13,14 @@ category: three.js
 
 先看看 PerspectiveCamera 官方 API 说明如下：
 
-```
-PerspectiveCamera( fov, aspect, near, far )
 
-fov — Camera frustum vertical field of view.
-aspect — Camera frustum aspect ratio.
-near — Camera frustum near plane.
-far — Camera frustum far plane.
-```
+> PerspectiveCamera( fov, aspect, near, far )
+> 
+> fov — Camera frustum vertical field of view.
+> aspect — Camera frustum aspect ratio.
+> near — Camera frustum near plane.
+> far — Camera frustum far plane.
+
 
 上面四个参数都会影响成像结果，`fov` 和 `aspect` 设置 XY 平面的范围，也就是广度。 `near` 和 `far` 影响的是纵深 Z 轴的范围，也就是深度。纵深只要保证物体离相机距离在这个范围就可以了，这是为了性能而设置的参数，由用户设置，只渲染必要的东西。实际上真实的相机这两个值对应的是 0 到 无限远。
 
@@ -122,6 +122,12 @@ var controls = new function () {
     this.height = 500;
     this.planeRY = 0;
 
+    /**
+    * 计算相机 fov 的函数
+    * @param d : 在相机前方 d 距离
+    * @param w : 想要看到最大正方形区域边长为 w
+    * @param r : 屏幕宽高比
+    */
     function calcFov(d, w, r) {
         var f;
         var vertical = w;
@@ -142,7 +148,11 @@ var controls = new function () {
 }
 ```
 
+
 效果：
 {% asset_img fov-to-height-final.jpg %}
 
+
+
 demo 的完整代码：[http://codepen.io/JasonTurbo/pen/ZLwJMo](http://codepen.io/JasonTurbo/pen/ZLwJMo)
+在个人网站的应用：[http://gnauhca.com](http://gnauhca.com/)

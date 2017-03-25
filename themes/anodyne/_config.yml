@@ -4,15 +4,14 @@ logo_image_source: /blog/images/avatar.jpg
 
 # Index Page
 index_banner_text: Hi, I m Chaz
-index_banner_text_secondary: 这里是我的博客
+index_banner_text_secondary: This is my blog
 index_font_awesome_icon_css: fa fa-paper-plane
 
 # Header
 menu:
   首页: /
   归档: /archives
-  关于: /about.html
-  联系: /contact.html
+  关于: http://gnauhca.com
 
 # Post
 default_post_title: Untitled
@@ -24,7 +23,7 @@ archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
 about_widget_avatar_url: /blog/images/avatar.jpg
-about_widget_text: "My name is Zhouzhichuang. You can call me Chaz. I was born in 1991s."
+about_widget_text: "你好，我是阿创。欢迎你"
 
 
 # Comments.
